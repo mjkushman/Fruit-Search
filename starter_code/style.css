@@ -1,0 +1,67 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+:focus {
+ /* TODO */
+}
+
+body {
+  background-image: linear-gradient(to right,rgb(251, 236, 26),rgb(200, 88, 3));
+
+}
+
+input {
+ width:250px;
+ height:34px;
+}
+
+.search-container {
+  /* TODO */
+  position:fixed;
+  left:50%;
+  top: 50%;
+  margin-left:-125px;
+  margin-top:-17px;
+}
+.search-container input,
+.search-container .suggestions {
+  /* TODO */
+  background-color:rgba(255, 255, 255, 0.185);
+  font-size: 1.2em;
+}
+.search-container input {
+ /* TODO */
+
+ 
+}
+.search-container .suggestions {
+   /* TODO */
+}
+
+ul {
+  /* TODO */
+  background-color: rgba(255, 255, 255, 0.083);
+  list-style:none;
+  text-align: left;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+ul.has-suggestions {
+  /* TODO */
+  /* background-color:purple; */
+}
+ul li {
+  /* TODO */
+  padding: 5px;
+  font-size:1em;
+}
+ul li:hover {
+  /* TODO */
+  background-color:rgb(221, 144, 0);
+}
+
+input {
+   /* TODO */
+}
