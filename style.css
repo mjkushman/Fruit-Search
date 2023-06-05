@@ -7,21 +7,22 @@
 }
 
 body {
-  background-image: linear-gradient(to right,rgb(251, 236, 26),rgb(200, 88, 3));
+  background-image: linear-gradient(to right,rgb(228, 168, 0),rgb(173, 75, 0));
 
 }
 
 input {
- width:250px;
+ width:500px;
  height:34px;
+ border-style: none;
 }
 
 .search-container {
   /* TODO */
   position:fixed;
   left:50%;
-  top: 50%;
-  margin-left:-125px;
+  top: 30%;
+  margin-left:-250px;
   margin-top:-17px;
 }
 .search-container input,
@@ -55,7 +56,8 @@ ul.has-suggestions {
 ul li {
   /* TODO */
   padding: 5px;
-  font-size:1em;
+  font-size:.9em;
+  font-weight: 100;
 }
 ul li:hover {
   /* TODO */
@@ -64,4 +66,5 @@ ul li:hover {
 
 input {
    /* TODO */
+   font-weight:300;
 }

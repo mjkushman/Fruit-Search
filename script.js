@@ -27,27 +27,25 @@ function searchHandler(e) {
 function clearField(){
 	suggestions.innerHTML = ''
 }
-
+let timer;
 function showSuggestions(results, inputVal) {
-	console.log('showSuggestions function called','results is',results,'inputVal is',inputVal);
-	
-	// this function should append the suggestions to the dom.
+	// console.log('showSuggestions function called','results is',results,'inputVal is',inputVal);
 	//it should take the RESULTS of the SEARCH function and append to dom
 	//why does this need inputVal? is it to trigger useSuggestion? Guess I'll come back to this later
 
-	// TO DO: figure out how to clear the list after a 2 or 3 second delay. The delay should reset upon every key press. Basically every call of this function
-	// clearField();
-	let timer;
-	const runTimer = () =>{
-		timer = setTimeout(() => {clearField()}, 3000);
-	}
+	clearField();
 	
-	for(r of results){
-		let newLi = document.createElement('li');
-		newLi.innerText = r;
-		suggestions.appendChild(newLi);
-		// console.log(newLi) //so far so good
-	};
+	const runTimer = () =>{
+		timer = setTimeout(() => {clearField()}, 5000);
+	}
+	if(inputVal != ''){ 
+		for(r of results){
+			let newLi = document.createElement('li');
+			newLi.innerText = r;
+			suggestions.appendChild(newLi);
+			// console.log(newLi) //so far so good
+		};
+	}
 	clearTimeout(timer)
 	runTimer()
 	console.log('updated suggestions list',suggestions)	
